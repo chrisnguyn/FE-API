@@ -1,4 +1,4 @@
-from auxiliary import *
+import routing
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
@@ -18,12 +18,12 @@ def error():
 
 @app.get('/{game}/characters')  # character list + recruitment
 def read_characters(game: str):
-    return get_characters(game)
+    return routing.get_characters(game)
 
 
 @app.get('/{game}/growths/{character}')  # growths
-def read_stats(game: str, character: str):
-    return get_stats(game, character)
+def read_growths(game: str, character: str):
+    return routing.get_growths(game, character)
 
 
 @app.exception_handler(StarletteHTTPException)
