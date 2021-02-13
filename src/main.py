@@ -16,6 +16,11 @@ def error():
     return 'Nothing to see here :('
 
 
+@app.get('/games')
+def read_games():
+    return routing.get_games()
+
+
 @app.get('/{game}/characters')  # character list + recruitment
 def read_characters(game: str):
     return routing.get_characters(game)
