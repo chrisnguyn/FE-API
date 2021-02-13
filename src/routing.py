@@ -27,3 +27,7 @@ def get_characters(game: str) -> dict:
 
 def get_growths(game: str, name: str) -> dict:
     return mapping[game].get_growths.execute(name)
+
+
+def get_supports(game: str, name: str) -> dict:
+    return mapping[game].get_supports.execute(name)

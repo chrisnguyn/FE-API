@@ -1,5 +1,3 @@
-# BeautifulSoup testing environment because parsing is hard
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -12,7 +10,7 @@ def execute(name):
             if cell and cell[0].isalpha():
                 supports.append(cell.split(' ')[0])
 
-        print(supports)
+        return supports
 
     response = requests.get('https://serenesforest.net/the-sacred-stones/characters/supports/')
     content = response.content
@@ -25,6 +23,3 @@ def execute(name):
             return generate(data)
 
     return {'Character' : 'Not Found'}
-
-
-execute('tana')

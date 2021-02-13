@@ -31,6 +31,11 @@ def read_growths(game: str, character: str):
     return routing.get_growths(game, character)
 
 
+@app.get('/{game}/supports/{character}')  # supports
+def read_supports(game: str, character: str):
+    return routing.get_supports(game, character)
+
+
 @app.exception_handler(StarletteHTTPException)
 def custom_http_exception_handler(request, exc):
     return RedirectResponse('/error')
