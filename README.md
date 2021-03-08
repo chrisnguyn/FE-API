@@ -1,7 +1,7 @@
 # FE-API
 The Unofficial Fire Emblem API.  
   
-Entirely with [FastAPI](https://fastapi.tiangolo.com/), using [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/) to scrape all content from [Serenes Forest](https://serenesforest.net/).
+Built entirely with [FastAPI](https://fastapi.tiangolo.com/), using [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/) to scrape all content from [Serenes Forest](https://serenesforest.net/).
 
 
 ## Config
