@@ -6,16 +6,20 @@ Built entirely with [FastAPI](https://fastapi.tiangolo.com/), using [BeautifulSo
 
 ## Endpoints
 Retrieve list of games and its numerical connotation
-       `/games`
+
+       /games
        
 Retrieve list of characters and recruitment location
-       `/{game}/characters`
+
+       /{game}/characters
        
 Retrieve a characters growth rates
-       `/{game}/growths/{character}`
+
+       /{game}/growths/{character}
        
 Retrieve a characters supports
-       `/{game}/supports/{character}`
+
+       /{game}/supports/{character}
 
 
 ## Config
