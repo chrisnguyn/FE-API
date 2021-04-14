@@ -5,8 +5,17 @@ Built entirely with [FastAPI](https://fastapi.tiangolo.com/), using [BeautifulSo
 
 
 ## Endpoints
-View available characters
-       `/.../.../{...}`
+Retrieve list of games and its numerical connotation
+       `/games`
+       
+Retrieve list of characters and recruitment location
+       `/{game}/characters`
+       
+Retrieve a characters growth rates
+       `/{game}/growths/{character}`
+       
+Retrieve a characters supports
+       `/{game}/supports/{character}`
 
 
 ## Config
